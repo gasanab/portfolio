@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about my background, skills, and experience as a web developer">
+  <meta name="keywords" content="about, web developer, skills, experience, education">
+  <meta name="author" content="Your Name">
+  <title>Services | GASANA BLESSMAN</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/public/favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/assets/css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm shadow-sm">
+    <div class="container flex items-center justify-between py-4">
+      <a href="/" class="text-2xl font-bold text-primary">GASANA BLESSMAN</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-2">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/src/pages/about.html" class="nav-link">About</a></li>
+          <li><a href="/src/pages/services.html" class="nav-link active">Services</a></li>
+          <li><a href="/src/pages/projects.html" class="nav-link">Projects</a></li>
+          <li><a href="/src/pages/achievements.html" class="nav-link">Achievements</a></li>
+          <li><a href="/src/pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Dark Mode Toggle -->
+      <div class="flex items-center space-x-4">
+        <label for="darkModeToggle" class="flex items-center cursor-pointer">
+          <div class="relative">
+            <input type="checkbox" id="darkModeToggle" class="sr-only">
+            <div class="block w-10 h-6 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+            <div class="absolute left-1 top-1 w-4 h-4 rounded-full transition-transform bg-white dark:translate-x-4"></div>
+          </div>
+          <span class="ml-2 text-sm"><i class="far fa-moon dark:hidden"></i><i class="far fa-sun hidden dark:block"></i></span>
+        </label>
+        
+        <!-- Mobile menu button -->
+        <button id="mobileMenuButton" class="text-xl md:hidden">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-700">
+      <div class="container py-4">
+        <ul class="space-y-4">
+          <li><a href="/" class="block nav-link">Home</a></li>
+          <li><a href="/src/pages/about.html" class="block nav-link">About</a></li>
+          <li><a href="/src/pages/services.html" class="block nav-link active">Services</a></li>
+          <li><a href="/src/pages/projects.html" class="block nav-link">Projects</a></li>
+          <li><a href="/src/pages/achievements.html" class="block nav-link">Achievements</a></li>
+          <li><a href="/src/pages/contact.html" class="block nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services Hero Section -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20 bg-gray-50 dark:bg-dark-bg/60">
+      <div class="container">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Professional Services</h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 animate-slide-up">Here are the services I offer to help your business grow and make data-informed decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What I Can Do For You</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          
+          <!-- Service 1 -->
+          <div class="card p-8 hover:shadow-lg transition-shadow flex flex-col justify-between text-center">
+            <div>
+              <div class="w-16 h-16 mx-auto rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
+                <i class="fas fa-chart-pie text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Data Analysis & Visualization</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Transforming raw data into actionable insights through comprehensive statistical analysis and interactive dashboards using Power BI and Tableau.
+              </p>
+            </div>
+            <a href="/src/pages/contact.html?service=Data Analysis" class="btn btn-primary w-full text-center mt-auto">
+              Request Service
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="card p-8 hover:shadow-lg transition-shadow flex flex-col justify-between text-center">
+            <div>
+              <div class="w-16 h-16 mx-auto rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6">
+                <i class="fas fa-brain text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Predictive Modeling</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Building machine learning models with Python and R to forecast trends, assess risks, and optimize your business operations.
+              </p>
+            </div>
+            <a href="/src/pages/contact.html?service=Predictive Modeling" class="btn btn-primary w-full text-center mt-auto">
+              Request Service
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="card p-8 hover:shadow-lg transition-shadow flex flex-col justify-between text-center">
+            <div>
+              <div class="w-16 h-16 mx-auto rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 mb-6">
+                <i class="fas fa-database text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Database Management</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Designing, optimizing, and maintaining scalable database structures and writing complex SQL queries to manage massive datasets effectively.
+              </p>
+            </div>
+            <a href="/src/pages/contact.html?service=Database Management" class="btn btn-primary w-full text-center mt-auto">
+              Request Service
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="card p-8 hover:shadow-lg transition-shadow flex flex-col justify-between text-center">
+            <div>
+              <div class="w-16 h-16 mx-auto rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-400 mb-6">
+                <i class="fas fa-laptop-code text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Full Stack Web Development</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Developing responsive, high-performance web applications using modern technologies like React, Node.js, and HTML/CSS.
+              </p>
+            </div>
+            <a href="/src/pages/contact.html?service=Web Development" class="btn btn-primary w-full text-center mt-auto">
+              Request Service
+            </a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="card p-8 hover:shadow-lg transition-shadow flex flex-col justify-between text-center">
+            <div>
+              <div class="w-16 h-16 mx-auto rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-600 dark:text-red-400 mb-6">
+                <i class="fas fa-chart-line text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Financial Analysis</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Providing comprehensive loan analysis, risk assessment, and quantitative financial modeling to support robust investment strategies.
+              </p>
+            </div>
+            <a href="/src/pages/contact.html?service=Financial Analysis" class="btn btn-primary w-full text-center mt-auto">
+              Request Service
+            </a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="card p-8 hover:shadow-lg transition-shadow flex flex-col justify-between text-center">
+            <div>
+              <div class="w-16 h-16 mx-auto rounded-full bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center text-teal-600 dark:text-teal-400 mb-6">
+                <i class="fas fa-clipboard-check text-3xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Data Collection & Cleaning</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Setting up data collection workflows (e.g., Kobo Toolbox) and performing rigorous data cleaning and preparation for precise analytics.
+              </p>
+            </div>
+            <a href="/src/pages/contact.html?service=Data Collection" class="btn btn-primary w-full text-center mt-auto">
+              Request Service
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Gasana Blessman</h3>
+          <p class="mb-4 text-gray-300">A results-driven Data Scientist and Financial Analyst passionate about driving data-informed decisions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gasana-blessman?" class="text-gray-300 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+            <li><a href="/src/pages/about.html" class="text-gray-300 hover:text-primary transition-colors">About</a></li>
+            <li><a href="/src/pages/services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a></li>
+            <li><a href="/src/pages/projects.html" class="text-gray-300 hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="/src/pages/achievements.html" class="text-gray-300 hover:text-primary transition-colors">Achievements</a></li>
+            <li><a href="/src/pages/contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+              <span>KG 305 st, Kigali, RWANDA</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
+              <span>gasanab5@gmail.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-3 text-primary"></i>
+              <span>+250 790 720 011</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Gasana Blessman. All rights reserved.</p>
+        <p class="mt-2 text-sm">Built with <i class="fas fa-heart text-red-500"></i> using HTML, Tailwind CSS, and JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script type="module" src="/src/assets/js/scripts.js"></script>
+</body>
+</html>

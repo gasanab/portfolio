@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact me for web development projects, collaboration opportunities, or questions">
+  <meta name="keywords" content="contact, web developer, hire, freelance, collaboration">
+  <meta name="author" content="Your Name">
+  <title>Contact Me | Your Name</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/public/favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/assets/css/styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm shadow-sm">
+    <div class="container flex items-center justify-between py-4">
+      <a href="/" class="text-2xl font-bold text-primary">GASANA BLESSMAN</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-2">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/src/pages/about.html" class="nav-link">About</a></li>
+          <li><a href="/src/pages/services.html" class="nav-link">Services</a></li>
+          <li><a href="/src/pages/projects.html" class="nav-link">Projects</a></li>
+          <li><a href="/src/pages/achievements.html" class="nav-link">Achievements</a></li>
+          <li><a href="/src/pages/contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Dark Mode Toggle -->
+      <div class="flex items-center space-x-4">
+        <label for="darkModeToggle" class="flex items-center cursor-pointer">
+          <div class="relative">
+            <input type="checkbox" id="darkModeToggle" class="sr-only">
+            <div class="block w-10 h-6 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+            <div class="absolute left-1 top-1 w-4 h-4 rounded-full transition-transform bg-white dark:translate-x-4"></div>
+          </div>
+          <span class="ml-2 text-sm"><i class="far fa-moon dark:hidden"></i><i class="far fa-sun hidden dark:block"></i></span>
+        </label>
+        
+        <!-- Mobile menu button -->
+        <button id="mobileMenuButton" class="text-xl md:hidden">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-700">
+      <div class="container py-4">
+        <ul class="space-y-4">
+          <li><a href="/" class="block nav-link">Home</a></li>
+          <li><a href="/src/pages/about.html" class="block nav-link">About</a></li>
+          <li><a href="/src/pages/services.html" class="block nav-link">Services</a></li>
+          <li><a href="/src/pages/projects.html" class="block nav-link">Projects</a></li>
+          <li><a href="/src/pages/achievements.html" class="block nav-link">Achievements</a></li>
+          <li><a href="/src/pages/contact.html" class="block nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact Hero Section -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20">
+      <div class="container">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Get In Touch</h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 animate-slide-up">Have a question or want to work together? I'd love to hear from you!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info & Form Section -->
+    <section class="section pb-24">
+      <div class="container">
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-8">
+                Feel free to reach out through any of the following methods. I'll get back to you as soon as possible.
+              </p>
+            </div>
+            
+            <!-- Contact Methods -->
+            <div class="space-y-6">
+              <!-- Email -->
+              <div class="flex items-start p-4 rounded-lg bg-white dark:bg-dark-bg/80 shadow-md hover:shadow-lg transition-all">
+                <div class="bg-primary/10 rounded-full p-3 mr-4">
+                  <i class="fas fa-envelope text-xl text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold mb-1">Email</h3>
+                  <p class="text-gray-600 dark:text-gray-300">gasanab5@gmail.com</p>
+                </div>
+              </div>
+              
+              <!-- Phone -->
+              <div class="flex items-start p-4 rounded-lg bg-white dark:bg-dark-bg/80 shadow-md hover:shadow-lg transition-all">
+                <div class="bg-primary/10 rounded-full p-3 mr-4">
+                  <i class="fas fa-phone-alt text-xl text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold mb-1">Phone</h3>
+                  <p class="text-gray-600 dark:text-gray-300">+250 790 720 011</p>
+                </div>
+              </div>
+              
+              <!-- Location -->
+              <div class="flex items-start p-4 rounded-lg bg-white dark:bg-dark-bg/80 shadow-md hover:shadow-lg transition-all">
+                <div class="bg-primary/10 rounded-full p-3 mr-4">
+                  <i class="fas fa-map-marker-alt text-xl text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold mb-1">Location</h3>
+                  <p class="text-gray-600 dark:text-gray-300">Kigali, Rwanda</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div>
+              <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/10 p-3 rounded-full transition-colors">
+                  <i class="fab fa-github text-xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gasana-blessman?" class="bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/10 p-3 rounded-full transition-colors" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin text-xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"></i>
+                </a>
+                <a href="#" class="bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/10 p-3 rounded-full transition-colors">
+                  <i class="fab fa-twitter text-xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"></i>
+                </a>
+                <a href="#" class="bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/10 p-3 rounded-full transition-colors">
+                  <i class="fab fa-instagram text-xl text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="contact-form bg-white dark:bg-dark-bg/80 p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6">Send Me a Message</h2>
+            <form id="contactForm" class="space-y-6">
+              <!-- Name Input -->
+              <div>
+                <label for="name" class="block mb-2 font-medium">Name</label>
+                <input type="text" id="name" name="name" required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800">
+              </div>
+              
+              <!-- Email Input -->
+              <div>
+                <label for="email" class="block mb-2 font-medium">Email</label>
+                <input type="email" id="email" name="email" required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800">
+              </div>
+
+              <!-- Address Input -->
+              <div>
+                <label for="address" class="block mb-2 font-medium">Address</label>
+                <input type="address" id="address" name="address" required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800">
+              </div>
+
+              <!-- Phone number Input with Country Code -->
+              <div>
+                <label for="phone" class="block mb-2 font-medium">Phone Number</label>
+                <div class="flex gap-2">
+                  <select id="countryCode" name="countryCode" class="w-1/3 px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800">
+                    <option value="+250">🇷🇼 Rwanda (+250)</option>
+                    <option value="+1">🇺🇸 USA (+1)</option>
+                    <option value="+44">🇬🇧 UK (+44)</option>
+                    <option value="+27">🇿🇦 South Africa (+27)</option>
+                    <option value="+254">🇰🇪 Kenya (+254)</option>
+                    <option value="+256">🇺🇬 Uganda (+256)</option>
+                    <option value="+255">🇹🇿 Tanzania (+255)</option>
+                    <option value="+243">🇨🇩 DRC (+243)</option>
+                  </select>
+                  <input type="tel" id="phone" name="phone" required 
+                    class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800"
+                    placeholder="e.g. 788123456">
+                </div>
+              </div>
+                            
+              
+              <!-- Subject Input -->
+              <div>
+                <label for="subject" class="block mb-2 font-medium">Subject</label>
+                <input type="text" id="subject" name="subject" required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800">
+              </div>
+              
+              <!-- Message Input -->
+              <div>
+                <label for="message" class="block mb-2 font-medium">Message</label>
+                <textarea id="message" name="message" rows="5" required 
+                  class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white dark:bg-gray-800"></textarea>
+              </div>
+              
+              <!-- Hidden Timestamp field -->
+              <input type="hidden" id="timestamp" name="timestamp">
+              
+              <!-- Form Submission -->
+              <div class="flex items-center">
+                <button type="submit" id="submitButton" class="w-full btn btn-primary py-3">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+              </div>
+              <div id="loadingSpinner" class="hidden ml-3">
+                <i class="fas fa-circle-notch fa-spin text-primary text-xl"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="section bg-gray-50 dark:bg-dark-bg/60 py-16">
+      <div class="container">
+        <h2 class="section-title">Where to Find Me</h2>
+        <div class="max-w-6xl mx-auto">
+          <div class="aspect-video bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <!-- Replace with actual map embed code -->
+            <div class="w-full h-full">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127600.99951664424!2d30.0076!3d-1.9441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="max-w-4xl mx-auto space-y-6">
+          <!-- FAQ Item -->
+          <div class="card hover:shadow-lg p-6">
+            <h3 class="text-xl font-bold mb-2">What services do you offer?</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              I offer a range of web development services including responsive website design, front-end and back-end development, e-commerce solutions, and website maintenance.
+            </p>
+          </div>
+          
+          <!-- FAQ Item -->
+          <div class="card hover:shadow-lg p-6">
+            <h3 class="text-xl font-bold mb-2">What is your typical project timeline?</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Project timelines vary depending on the scope and complexity. A basic website might take 2-3 weeks, while more complex projects could take 1-3 months. I'll provide a detailed timeline estimate after discussing your specific requirements.
+            </p>
+          </div>
+          
+          <!-- FAQ Item -->
+          <div class="card hover:shadow-lg p-6">
+            <h3 class="text-xl font-bold mb-2">Do you offer ongoing maintenance?</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Yes, I offer website maintenance services to keep your site secure, up-to-date, and running smoothly. We can discuss a maintenance package that suits your needs.
+            </p>
+          </div>
+          
+          <!-- FAQ Item -->
+          <div class="card hover:shadow-lg p-6">
+            <h3 class="text-xl font-bold mb-2">How do we get started on a project?</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              The process begins with an initial consultation to discuss your goals, requirements, and timeline. After that, I'll provide a proposal and quote. Once approved, we'll move into the design and development phases with regular updates and feedback sessions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">Let's work together to create something amazing. Your vision, my expertise.</p>
+        <a href="#contactForm" class="btn bg-white text-primary hover:bg-gray-100">Contact Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">GASANA BLESSMAN</h3>
+          <p class="mb-4 text-gray-300">A results-driven Data Scientist and Financial Analyst passionate about driving data-informed decisions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gasana-blessman?" class="text-gray-300 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+            <li><a href="/src/pages/about.html" class="text-gray-300 hover:text-primary transition-colors">About</a></li>
+            <li><a href="/src/pages/services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a></li>
+            <li><a href="/src/pages/projects.html" class="text-gray-300 hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="/src/pages/achievements.html" class="text-gray-300 hover:text-primary transition-colors">Achievements</a></li>
+            <li><a href="/src/pages/contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+              <span>KG 305 st, Kigali, RWANDA</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
+              <span>gasanab5@gmail.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-3 text-primary"></i>
+              <span>+250 790 720 011</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Gasana Blessman. All rights reserved.</p>
+        <p class="mt-2 text-sm">Built with <i class="fas fa-heart text-red-500"></i> using HTML, Tailwind CSS, and JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Form Success Message (Hidden by default) -->
+  <div id="successMessage" class="fixed inset-0 flex items-center justify-center z-50 bg-black/50 hidden">
+    <div class="bg-white dark:bg-dark-bg p-8 rounded-lg shadow-xl max-w-md w-full">
+      <div class="text-center">
+        <i class="fas fa-check-circle text-5xl text-green-500 mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Message Sent!</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Thank you for your message. I'll get back to you as soon as possible. You'll receive a confirmation email shortly.</p>
+        <button id="closeSuccessMessage" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Form Error Message (Hidden by default) -->
+  <div id="errorMessage" class="fixed inset-0 flex items-center justify-center z-50 bg-black/50 hidden">
+    <div class="bg-white dark:bg-dark-bg p-8 rounded-lg shadow-xl max-w-md w-full">
+      <div class="text-center">
+        <i class="fas fa-exclamation-circle text-5xl text-red-500 mb-4"></i>
+        <h3 class="text-2xl font-bold mb-2">Message Failed</h3>
+        <p id="errorText" class="text-gray-600 dark:text-gray-300 mb-6">There was an error sending your message. Please try again later.</p>
+        <button id="closeErrorMessage" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email.js CDN for email functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <!-- JS Scripts -->
+  <script type="module" src="/src/assets/js/scripts.js"></script>
+  <script>
+    // Form submission handling with Email.js integration
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      const closeSuccessMessage = document.getElementById('closeSuccessMessage');
+      const closeErrorMessage = document.getElementById('closeErrorMessage');
+      const submitButton = document.getElementById('submitButton');
+      const loadingSpinner = document.getElementById('loadingSpinner');
+      const timestampField = document.getElementById('timestamp');
+      
+      // Initialize Email.js with your user ID
+      // Your Email.js public key
+      emailjs.init('c_yKQ5TJVl7PKCPFg');
+      
+      // Function to get current timestamp
+      function updateTimestamp() {
+        const now = new Date();
+        timestampField.value = now.toISOString();
+      }
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          // Update timestamp
+          updateTimestamp();
+          
+          // Show loading state
+          submitButton.disabled = true;
+          loadingSpinner.classList.remove('hidden');
+          
+          try {
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+            const countryCode = document.getElementById('countryCode').value;
+            const phoneNumber = document.getElementById('phone').value;
+            const phone = `${countryCode} ${phoneNumber}`; // Combine country code and phone number
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            const timestamp = document.getElementById('timestamp').value;
+            
+            // Template parameters for Email.js
+            const templateParams = {
+              from_name: name,
+              from_email: email,
+              from_phone: phone,
+              from_address: address, // Include address in the email
+              subject: subject,
+              message: message,
+              timestamp: timestamp,
+              to_name: 'GASANA BLESSMAN',
+              reply_to: email
+            };
+            
+            // Send notification email to site owner
+            await emailjs.send(
+              'service_8nq0198',   // Replace with your Email.js service ID
+              'template_at5ta3d',  // Contact Us template - for notifications to you
+              templateParams
+            );
+            
+            // Send confirmation email to the user
+            await emailjs.send(
+              'service_8nq0198',          
+              'template_z7te6vg',    
+              {
+                to_email: email,
+                from_email: email, // Many auto-reply templates accidentally expect from_email
+                email: email,      // Sometimes people just use {{email}}
+                to_name: name,
+                from_name: name,
+                name: name,
+                reply_to: 'gasanab5@gmail.com', // If user replies to auto-reply, it goes to you
+                subject: 'Thank you for contacting GASANA BLESSMAN',
+                message: 'I have received your message and will get back to you as soon as possible.'
+              }
+            );
+            
+            // Show success message
+            successMessage.classList.remove('hidden');
+            console.log('Form submitted successfully');
+            
+            // Reset form
+            contactForm.reset();
+          } catch (error) {
+            console.error('Form submission error details:', {
+              error: error,
+              message: error.message,
+              status: error.status,
+              stack: error.stack
+            });
+            
+            let errorMessageText = 'There was an error sending your message. ';
+            
+            // More specific error messages based on the error type
+            if (error.status === 0 || (error.message && error.message.includes('Failed to fetch'))) {
+              errorMessageText = 'Unable to connect to the server. Please check your internet connection and try again.';
+            } else if (error.status === 400) {
+              errorMessageText = 'Invalid form data. Please check all fields and try again.';
+            } else if (error.status === 412) {
+              errorMessageText = 'Email service configuration error. Please contact me directly at gasanab5@gmail.com.';
+            } else if (error.status === 500) {
+              errorMessageText = 'Server error. Please try again later or contact me directly at gasanab5@gmail.com';
+            } else if (error.message && error.message.includes('email')) {
+              errorMessageText = 'There was an error with the email service. Please try again or contact me directly at gasanab5@gmail.com';
+            }
+            
+            // Show error message to user
+            const errorElement = document.getElementById('errorText');
+            if (errorElement) {
+              errorElement.textContent = errorMessageText;
+              errorMessage.classList.remove('hidden');
+            } else {
+              console.error('Error element not found');
+              alert('Error: ' + errorMessageText);
+            }
+          } finally {
+            // Reset button state
+            submitButton.disabled = false;
+            loadingSpinner.classList.add('hidden');
+          }
+        });
+      }
+      
+      // Close success message
+      if (closeSuccessMessage) {
+        closeSuccessMessage.addEventListener('click', function() {
+          successMessage.classList.add('hidden');
+        });
+      }
+      
+      // Close error message
+      if (closeErrorMessage) {
+        closeErrorMessage.addEventListener('click', function() {
+          errorMessage.classList.add('hidden');
+        });
+      }
+      
+      // Auto-fill from URL parameters (e.g. ?service=Web%20Development)
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceRequested = urlParams.get('service');
+      
+      if (serviceRequested) {
+        const subjectField = document.getElementById('subject');
+        const messageField = document.getElementById('message');
+        
+        if (subjectField) subjectField.value = `Service Inquiry: ${serviceRequested}`;
+        if (messageField) messageField.value = `Hello Gasana Blessman,\n\nI am interested in your ${serviceRequested} services. I would like to request more information on how we can work together.\n\nBest regards,`;
+      }
+    });
+  </script>
+</body>
+</html>
