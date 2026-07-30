@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about my background, skills, and experience as a web developer">
+  <meta name="keywords" content="about, web developer, skills, experience, education">
+  <meta name="author" content="Your Name">
+  <title>About Me | GASANA BLESSMAN</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/x-icon;base64,Cg==">
+  
+  <!-- CSS -->
+  
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" crossorigin src="/assets/vendor-cf87e9ff.js"></script>
+  <script type="module" crossorigin src="/assets/scripts-cbe09a07.js"></script>
+  <link rel="stylesheet" href="/assets/scripts-855e3334.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm shadow-sm">
+    <div class="container flex items-center justify-between py-4">
+      <a href="/" class="text-2xl font-bold text-primary">GASANA BLESSMAN</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-2">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/src/pages/about.html" class="nav-link active">About</a></li>
+          <li><a href="/src/pages/services.html" class="nav-link">Services</a></li>
+          <li><a href="/src/pages/projects.html" class="nav-link">Projects</a></li>
+          <li><a href="/src/pages/achievements.html" class="nav-link">Achievements</a></li>
+          <li><a href="/src/pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Dark Mode Toggle -->
+      <div class="flex items-center space-x-4">
+        <label for="darkModeToggle" class="flex items-center cursor-pointer">
+          <div class="relative">
+            <input type="checkbox" id="darkModeToggle" class="sr-only">
+            <div class="block w-10 h-6 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+            <div class="absolute left-1 top-1 w-4 h-4 rounded-full transition-transform bg-white dark:translate-x-4"></div>
+          </div>
+          <span class="ml-2 text-sm"><i class="far fa-moon dark:hidden"></i><i class="far fa-sun hidden dark:block"></i></span>
+        </label>
+        
+        <!-- Mobile menu button -->
+        <button id="mobileMenuButton" class="text-xl md:hidden">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-700">
+      <div class="container py-4">
+        <ul class="space-y-4">
+          <li><a href="/" class="block nav-link">Home</a></li>
+          <li><a href="/src/pages/about.html" class="block nav-link active">About</a></li>
+          <li><a href="/src/pages/services.html" class="block nav-link">Services</a></li>
+          <li><a href="/src/pages/projects.html" class="block nav-link">Projects</a></li>
+          <li><a href="/src/pages/achievements.html" class="block nav-link">Achievements</a></li>
+          <li><a href="/src/pages/contact.html" class="block nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Hero Section -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20 about-section">
+      <div class="container">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">About Me</h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 animate-slide-up">Learn more about my journey as a Data Scientist and Financial Analyst.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="section">
+      <div class="container">
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img src="/images/profile.jpeg" alt="Profile Picture" class="w-full h-auto">
+          </div>
+          <div class="about-content">
+            <h2 class="text-3xl font-bold mb-6">My Story</h2>
+            <p class="mb-4 text-gray-700 dark:text-gray-300">
+              Hello! I'm a results-driven Data Scientist and Financial Analyst with hands-on experience in loan analysis, predictive modeling, and data visualization. 
+              My expertise includes working with tools like SQL, Python, SPSS, and Power BI to derive actionable insights from complex datasets.
+            </p>
+            <p class="mb-4 text-gray-700 dark:text-gray-300">
+              Beyond data science, I also have experience in full-stack web development, creating scalable data pipelines and responsive applications.
+              I am eager to contribute to driving data-informed decisions and optimizing operational efficiency for organizations.
+            </p>
+            <p class="mb-6 text-gray-700 dark:text-gray-300">
+              I'm constantly learning and improving my skills, currently pursuing a Master's in Financial Engineering to deepen my knowledge in quantitative finance.
+            </p>
+            <div class="flex space-x-4">
+              <a href="/src/pages/contact.html" class="btn btn-primary">Get In Touch</a>
+              <!-- To use a Google Drive link, paste your link inside the href="..." below -->
+              <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">Open CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section bg-gray-50 dark:bg-dark-bg/60">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+          <!-- Experience Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Data Scientist, Researcher & Project Management</h3>
+                <p class="text-primary font-medium">FINACCO HUB | Kigali, Rwanda</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  May 2026 - Present
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Designed and maintained scalable data pipelines to collect, process, and transform data from multiple sources for analytics and reporting. Conducted research and data analysis to generate actionable insights, supporting strategic decision-making and business growth. Managed project activities, developed dashboards, and collaborated with stakeholders to deliver data-driven solutions efficiently.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Data Pipelines</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Dashboards</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Project Management</span>
+            </div>
+          </div>
+
+          <!-- Experience Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Full Stack Web Development (Internship)</h3>
+                <p class="text-primary font-medium">KLAB | Kigali, Rwanda</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  April 2026 - Present
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Developed and maintained responsive web applications using front-end and back-end technologies while collaborating with team members to deliver scalable software solutions. Assisted in database management, API integration, testing, and debugging to improve system performance and user experience.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Front-end</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Back-end</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">API Integration</span>
+            </div>
+          </div>
+
+          <!-- Experience Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Data Scientist (Professional Intern)</h3>
+                <p class="text-primary font-medium">MINEDUC - Higher Education Council (HEC) | Kigali, Rwanda</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  November 2025 - May 2026
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Analyzed and prepared higher education data to support policy, accreditation, and quality assurance decisions. Built dashboards and reports using Python, Excel, and SQL, applying statistical analysis and basic machine learning to identify trends and performance gaps.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Python</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">SQL</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Machine Learning</span>
+            </div>
+          </div>
+          
+          <!-- Experience Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Data Enumerator (Part time)</h3>
+                <p class="text-primary font-medium">UMURAVA - KIVU Choice | Kigali, Rwanda</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  February 2025 - Present
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Collecting field survey data using Kobo Toolbox and conducting face to face interviews to ensure accurate and complete responses. Performed data quality checks, uploaded data to the server, and maintained confidentiality in line with research standards.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Kobo Toolbox</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Data Collection</span>
+            </div>
+          </div>
+          
+          <!-- Experience Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Loan Analyst (Professional Intern)</h3>
+                <p class="text-primary font-medium">LOLC UNGUKA Finance | Kigali, Rwanda</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  July 2024 - September 2024
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Analyzed 50+ loan requests and used SQL to manage data, collaborating with bankers to streamline approvals and reduce processing time by 15%.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">SQL</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded text-sm">Data Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+          <!-- Education Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Masters of Science (MSc), Financial Engineering</h3>
+                <p class="text-primary font-medium">WorldQuant University | Online</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  January 2026 - Present
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Coursework in Financial Engineering includes Quantitative Finance, Risk Management, Time Series Analysis, Stochastic Processes, and Derivatives Pricing. Gained hands-on experience in financial modeling, portfolio optimization, and statistical analysis using Python and quantitative methods. Developed strong analytical foundations in pricing models, risk assessment, and data-driven financial decision-making.
+            </p>
+            <div class="flex space-x-4 mt-5 border-t border-gray-200 dark:border-gray-700 pt-4">
+              <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline flex items-center">
+                <i class="fas fa-certificate mr-2"></i> View Diploma
+              </a>
+              <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline flex items-center">
+                <i class="fas fa-file-alt mr-2"></i> View Transcript
+              </a>
+            </div>
+          </div>
+
+          <!-- Education Item -->
+          <div class="card hover:shadow-lg p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold">Bachelor of Science (BSc), Mathematics: Statistics</h3>
+                <p class="text-primary font-medium">University of Rwanda: College of Science and Technology | Kigali, Rwanda</p>
+              </div>
+              <div class="mt-2 md:mt-0">
+                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded text-sm">
+                  May 2022 - October 2025
+                </span>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Completed coursework in Statistical Modeling, Data Analysis, Predictive Analytics, and Probability Theory, with hands-on experience using R and SPSS for statistical modeling. Successfully conducted research on optimizing public transport schedules using Poisson Queue models.
+            </p>
+            <div class="flex space-x-4 mt-5 border-t border-gray-200 dark:border-gray-700 pt-4">
+              <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline flex items-center">
+                <i class="fas fa-certificate mr-2"></i> View Diploma
+              </a>
+              <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline flex items-center">
+                <i class="fas fa-file-alt mr-2"></i> View Transcript
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section bg-gray-50 dark:bg-dark-bg/60">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="max-w-4xl mx-auto">
+          <!-- Skill Categories -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Data Science Skills -->
+            <div class="card p-8">
+              <h3 class="text-2xl font-bold mb-6 text-primary">Data Science & Analytics</h3>
+              <div class="space-y-4">
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Data Analysis & Statistical Modeling</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Predictive Analysis & Machine Learning</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Data Visualization & Dashboarding</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Database Management</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Data Collection & Cleaning</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Software & Tools -->
+            <div class="card p-8">
+              <h3 class="text-2xl font-bold mb-6 text-secondary">Tools & Software</h3>
+              <div class="space-y-4">
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Python (Pandas, NumPy, Scikit-learn)</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-secondary h-2 rounded-full" style="width: 90%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">SQL & MySQL</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Power BI & Tableau</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">R, SPSS, Stata</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+                  </div>
+                </div>
+                
+                <!-- Skill with progress bar -->
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">Full Stack (Node.js, React, HTML/CSS)</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-secondary h-2 rounded-full" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Other Skills -->
+          <div class="mt-8">
+            <h3 class="text-xl font-bold mb-4">Other Skills & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">Teamwork & Leadership</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">Communication</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">Story Telling</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">Time Management</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">Attention to Detail</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">English (Fluent)</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">French (Fluent)</span>
+              <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded">Kinyarwanda (Native)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Interests & Hobbies</h2>
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Interest -->
+          <div class="flex flex-col items-center p-6 card hover:shadow-lg text-center">
+            <i class="fas fa-chart-line text-4xl mb-4 text-primary"></i>
+            <h3 class="font-bold text-lg mb-2">Data Analytics</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Working on personal data projects and applied research.</p>
+          </div>
+          
+          <!-- Interest -->
+          <div class="flex flex-col items-center p-6 card hover:shadow-lg text-center">
+            <i class="fas fa-microscope text-4xl mb-4 text-primary"></i>
+            <h3 class="font-bold text-lg mb-2">Research</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Exploring applied research methodologies and findings.</p>
+          </div>
+          
+          <!-- Interest -->
+          <div class="flex flex-col items-center p-6 card hover:shadow-lg text-center">
+            <i class="fas fa-book text-4xl mb-4 text-primary"></i>
+            <h3 class="font-bold text-lg mb-2">Reading</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Devouring analytical and technical literature.</p>
+          </div>
+          
+          <!-- Interest -->
+          <div class="flex flex-col items-center p-6 card hover:shadow-lg text-center">
+            <i class="fas fa-camera text-4xl mb-4 text-primary"></i>
+            <h3 class="font-bold text-lg mb-2">Photography</h3>
+            <p class="text-gray-600 dark:text-gray-300 text-sm">Capturing community events and organizational activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Certifications Section -->
+    <section class="section bg-gray-50 dark:bg-dark-bg/60">
+      <div class="container">
+        <h2 class="section-title">Certifications & Volunteer Work</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Certifications -->
+          <div class="card p-8">
+            <h3 class="text-2xl font-bold mb-6 text-primary">Professional Certifications</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fas fa-certificate mt-1 mr-3 text-secondary"></i>
+                <div>
+                  <h4 class="font-bold">Python for Data Science</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Saylor Academy | Completed: January 2025</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-certificate mt-1 mr-3 text-secondary"></i>
+                <div>
+                  <h4 class="font-bold">Advanced Business Intelligent and Analytic</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Saylor Academy | Completed: February 2025</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-certificate mt-1 mr-3 text-secondary"></i>
+                <div>
+                  <h4 class="font-bold">Data Management</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Saylor Academy | Completed: March 2025</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-certificate mt-1 mr-3 text-secondary"></i>
+                <div>
+                  <h4 class="font-bold">Python coder</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Kaggle | Completed: March 2025</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-certificate mt-1 mr-3 text-secondary"></i>
+                <div>
+                  <h4 class="font-bold">AI Essential</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">ALX | Completed: August 2024</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-certificate mt-1 mr-3 text-secondary"></i>
+                <div>
+                  <h4 class="font-bold">Data Enumerator Training</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">National Institute of Statistics Rwanda (NISR) | 1 week Training</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Volunteer & Affiliations -->
+          <div class="space-y-8">
+            <div class="card p-8">
+              <h3 class="text-2xl font-bold mb-6 text-primary">Volunteer Work</h3>
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-bold">Volunteer Photographer</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">MSAR | 2024 - 2025</p>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Captured and edited photographs for community events and organizational activities.</p>
+                </div>
+                <div>
+                  <h4 class="font-bold">COVID 19 Youth Volunteer</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Buranga, Kigali | 2020 - 2021</p>
+                  <p class="text-sm text-gray-700 dark:text-gray-300">Conducted community awareness campaigns on COVID-19 prevention and vaccination.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card p-8">
+              <h3 class="text-2xl font-bold mb-4 text-primary">Affiliations</h3>
+              <div>
+                <h4 class="font-bold">Mathematics and Statistics, Students’ Association of Rwanda (MSAR)</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">2023 - Registered under University of Rwanda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Interested in Working Together?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">If my skills and experience align with your project needs, I'd love to hear from you!</p>
+        <a href="/src/pages/contact.html" class="btn bg-white text-primary hover:bg-gray-100">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Gasana Blessman</h3>
+          <p class="mb-4 text-gray-300">A results-driven Data Scientist and Financial Analyst passionate about driving data-informed decisions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gasana-blessman?" class="text-gray-300 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-300 hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+            <li><a href="/src/pages/about.html" class="text-gray-300 hover:text-primary transition-colors">About</a></li>
+            <li><a href="/src/pages/services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a></li>
+            <li><a href="/src/pages/projects.html" class="text-gray-300 hover:text-primary transition-colors">Projects</a></li>
+            <li><a href="/src/pages/achievements.html" class="text-gray-300 hover:text-primary transition-colors">Achievements</a></li>
+            <li><a href="/src/pages/contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
+              <span>KG 305 st, Kigali, RWANDA</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
+              <span>gasanab5@gmail.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-3 text-primary"></i>
+              <span>+250 790 720 011</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Gasana Blessman. All rights reserved.</p>
+        <p class="mt-2 text-sm">Built with <i class="fas fa-heart text-red-500"></i> using HTML, Tailwind CSS, and JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  
+</body>
+</html>
